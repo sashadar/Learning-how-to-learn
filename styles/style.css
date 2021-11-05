@@ -12,7 +12,9 @@
 div,
 h1,
 h2,
-p {
+p,
+ul,
+li {
   border-style: solid;
   border-width: 1px;
   border-color: red;
@@ -85,7 +87,6 @@ p {
   width: 568px;
   height: 568px;
   background-color: #2f80ed;
-  z-index: 0;
 }
 
 .description {
@@ -129,6 +130,59 @@ p {
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
+}
+
+.digits {
+  margin-top: 100px;
+}
+
+.section-title {
+  width: 60%;
+  text-align: center;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 20px auto 0;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 60px auto 0;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.table__cell {
+  width: 250px;
+}
+
+.table__cell:nth-child(n + 5) {
+  margin-top: 60px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 20px 0 0;
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
