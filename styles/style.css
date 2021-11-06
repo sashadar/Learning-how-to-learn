@@ -9,18 +9,6 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-div,
-h1,
-h2,
-p,
-ul,
-li,
-section {
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
-}
-
 .header {
   display: flex;
   align-items: center;
