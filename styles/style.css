@@ -14,7 +14,8 @@ h1,
 h2,
 p,
 ul,
-li {
+li,
+section {
   border-style: solid;
   border-width: 1px;
   border-color: red;
@@ -28,22 +29,27 @@ li {
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
-
-  /* parameters for the header section */
 }
 
 .logo {
-  width: 154px;
-  height: 31px;
   background-size: cover;
+  background-position: center;
 }
 
 .logo_place_header {
+  width: 154px;
+  height: 31px;
   position: absolute;
-  z-index: 2;
   top: 30px;
   left: 64px;
   background-image: url("../images/logo_place_header.png");
+  z-index: 2;
+}
+
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+  background-image: url("../images/logo_place_footer.png");
 }
 
 .header__title {
@@ -176,12 +182,15 @@ li {
   justify-content: space-between;
   align-content: space-between;
   list-style: none;
+  padding: 0 0;
 }
 
 .table_theme_dark {
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .table__cell {
@@ -252,8 +261,8 @@ li {
 }
 
 .kaufman {
-  background-color: #000000;
-  padding: 90 0;
+  background-color: #1f1f1f;
+  padding: 90px 0;
   overflow: hidden;
   position: relative;
 }
@@ -266,6 +275,69 @@ li {
   top: 0;
   right: -124px;
   z-index: 0;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  min-height: 350px;
+  padding: 60px 0 40px;
+  box-sizing: border-box;
+}
+
+.footer__columns {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.footer__column {
+  min-height: 250px;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  position: relative;
+}
+
+.footer__author {
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footer__column_content_about {
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 20px;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  color: white;
+}
+
+.footer__column-link {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  text-decoration: none;
+}
+
+.footer__social-icons {
+  margin: 0 10px 0 0;
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
