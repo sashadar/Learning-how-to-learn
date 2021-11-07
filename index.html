@@ -6,7 +6,7 @@
     <meta name="description" content="WEB Project 1" />
     <meta name="keywords" content="html, css" />
     <meta name="author" content="Alex Darincev" />
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="vendor/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Learning how to learn</title>
   </head>
@@ -29,7 +29,7 @@
       </header>
       <main class="content">
         <section class="description">
-          <div class="two-columns">
+          <article class="two-columns">
             <h2 class="two-columns__brief">The main problem with education</h2>
             <div class="two-columns__main-text">
               <p class="two-columns__paragraph">
@@ -60,7 +60,7 @@
                 secrets of effective learning.
               </p>
             </div>
-          </div>
+          </article>
         </section>
 
         <section class="digits">
@@ -94,7 +94,7 @@
                 average adult human
               </p>
             </li>
-            <li class="table__cell table__cell_space_top">
+            <li class="table__cell">
               <h3 class="table__heading">420 million</h3>
               <p class="table__text">
                 The number of adults under 25 with insufficient education for
@@ -102,18 +102,18 @@
               </p>
               <p class="table__text">World Bank, 2017</p>
             </li>
-            <li class="table__cell table__cell_space_top">
+            <li class="table__cell">
               <h3 class="table__heading">26 years old</h3>
               <p class="table__text">
                 The age at which Albert Einstein published his groundbreaking
                 paper on special relativity
               </p>
             </li>
-            <li class="table__cell table__cell_space_top">
+            <li class="table__cell">
               <h3 class="table__heading">1885</h3>
               <p class="table__text">Development of the forgetting curve</p>
             </li>
-            <li class="table__cell table__cell_space_top">
+            <li class="table__cell">
               <h3 class="table__heading">1897</h3>
               <p class="table__text">
                 Publication of Ivan Pavlov's research on classical conditionin
@@ -129,11 +129,7 @@
         </section>
 
         <section class="kaufman">
-          <img
-            class="kaufman__triangle"
-            src="images/kaufman-triangle.svg"
-            alt="A big blue triangle, over which Josh Kaufman claims ownership"
-          />
+          <div class="kaufman__triangle"></div>
           <h2 class="section-title section-title_theme_dark">
             Ten principles of rapid skill acquisition
           </h2>
@@ -210,7 +206,7 @@
             <div class="logo logo_place_footer"></div>
             <p class="footer__author">&copy; 2021 Alex Darincev</p>
           </div>
-          <div class="footer__column footer__column_content_about">
+          <nav class="footer__column footer__column_content_about">
             <h3 class="footer__column-heading">About Practicum by Yandex</h3>
             <ul class="footer__list">
               <li class="footer__list-item">
@@ -223,7 +219,7 @@
                 <a href="#" class="footer__column-link">Professions</a>
               </li>
             </ul>
-          </div>
+          </nav>
           <div class="footer__column footer__column_content_social">
             <h3 class="footer__column-heading">Social media</h3>
             <ul class="footer__list">

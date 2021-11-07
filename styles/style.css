@@ -42,8 +42,8 @@
 
 .header__title {
   z-index: 2;
-  width: 730px;
-  margin-left: 64px;
+  max-width: 730px;
+  margin: 0 0 0 64px;
   position: relative;
   line-height: 96px;
   font-size: 102px;
@@ -55,7 +55,7 @@
   z-index: 2;
   left: 64px;
   bottom: 30px;
-  width: 388px;
+  max-width: 388px;
   margin: 0;
   line-height: 25px;
   font-size: 18px;
@@ -64,6 +64,7 @@
 
 .header__link {
   color: #2f80ed;
+  text-decoration: none;
 }
 
 .header__main-illustration {
@@ -166,7 +167,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 1100px;
-  margin: 60px auto 0;
+  margin: 0 auto;
   justify-content: space-between;
   align-content: space-between;
   list-style: none;
@@ -183,9 +184,6 @@
 
 .table__cell {
   width: 250px;
-}
-
-.table__cell_space_top {
   margin-top: 60px;
 }
 
@@ -212,7 +210,7 @@
 
 .feynman {
   padding-top: 100px;
-  height: 790px;
+  min-height: 790px;
   background-image: url("../images/feynman.png");
   background-position: bottom left;
   background-repeat: no-repeat;
@@ -246,6 +244,7 @@
   top: 50%;
   right: 48px;
   color: #2f80ed;
+  text-decoration: none;
 }
 
 .kaufman {
@@ -258,6 +257,8 @@
 .kaufman__triangle {
   width: 660px;
   height: 636px;
+  background-image: url("../images/kaufman-triangle.svg");
+
   z-index: 0;
   position: absolute;
   top: 0;
@@ -285,6 +286,9 @@
 .footer__column_content_copyright {
   flex-basis: 711px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer__author {
@@ -293,7 +297,7 @@
   font-size: 18px;
   font-weight: normal;
   color: white;
-  position: absolute;
+  /*position: absolute;*/
   left: 0;
   bottom: 0;
 }
@@ -313,6 +317,7 @@
   list-style: none;
   padding: 0;
   color: white;
+  margin: 0;
 }
 
 .footer__column-link {
@@ -325,10 +330,4 @@
 
 .footer__social-icons {
   margin: 0 10px 0 0;
-}
-
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
 }
