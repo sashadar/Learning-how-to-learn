@@ -1,0 +1,10 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  /*max-width should be changed to 920px before submitting a project.
+  Used for debugging purposes with solid borders for all objects enabled*/
+  max-width: 920px;
+}
